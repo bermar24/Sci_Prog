@@ -1,7 +1,7 @@
 # Ubuntu/Linux Mint:
 # sudo apt-get update && sudo apt-get install python3 python3-pip
 
-# TODO: whit this i can resalt a coment ( Implement a function...)
+# TODO: whit this I can resalt a coment ( Implement a function...)
 
 # Arithmetic operations
 a = 10

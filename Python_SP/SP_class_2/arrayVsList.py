@@ -1,7 +1,6 @@
 import numpy as np
 import time
 
-
 # List operation
 lst = [i for i in range(1_000_000)]
 start = time.time()

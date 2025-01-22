@@ -36,18 +36,6 @@ clean_data = df[(df['Insulin'] >= lower_bound)
 
 
 # Identify the quartiles
-q1, q3 = np.percentile(clean_data['Pregnancies'], [25, 75])
-# Calculate the interquartile range
-iqr = q3 - q1
-# Calculate the lower and upper bounds
-lower_bound = q1 - (1.5 * iqr)
-upper_bound = q3 + (1.5 * iqr)
-# Drop the outliers
-clean_data = clean_data[(clean_data['Pregnancies'] >= lower_bound)
-						& (clean_data['Pregnancies'] <= upper_bound)]
-
-
-# Identify the quartiles
 q1, q3 = np.percentile(clean_data['Age'], [25, 75])
 # Calculate the interquartile range
 iqr = q3 - q1
