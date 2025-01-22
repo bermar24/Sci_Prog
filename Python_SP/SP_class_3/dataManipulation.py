@@ -15,7 +15,6 @@ print("Merged DataFrame:\n", merged_df)
 df_concat = pd.concat([df1, df2], axis=0) # Stack rows
 print("\nConcatenated DataFrame:\n", df_concat)
 
-
 # Grouping and Aggregation
 data = {'Region': ['North', 'South', 'North', 'West'],
         'Sales': [200, 150, 300, 400],
@@ -35,7 +34,6 @@ print("\nPivot Table:\n", pivot)
 # Cross-tabulation
 crosstab = pd.crosstab(index=df['Region'], columns=df['Profit'] > 20)
 print("\nCross-tabulation:\n", crosstab)
-
 
 # TODO: Handling Missing Data
 df_missing = pd.DataFrame({'A': [1, 2, None], 'B': [4, None, 6]})
