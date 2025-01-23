@@ -7,7 +7,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Load the dataset
-df = pd.read_csv('/home/bar/PycharmProjects/pytProjectTest/SP/diabetes.csv')
+df = pd.read_csv('./diabetes.csv')
 print(df.head())
 
 df.info()

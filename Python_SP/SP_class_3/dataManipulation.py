@@ -22,8 +22,7 @@ data = {'Region': ['North', 'South', 'North', 'West'],
 df = pd.DataFrame(data)
 
 # Grouping and Aggregation
-grouped = df.groupby('Region').agg({'Sales': 'sum', 'Profit':
-'mean'})
+grouped = df.groupby('Region').agg({'Sales': 'sum', 'Profit': 'mean'})
 print("\nGrouped and Aggregated Data:\n", grouped)
 
 # TODO: Pivot Tables
@@ -38,7 +37,7 @@ print("\nCross-tabulation:\n", crosstab)
 # TODO: Handling Missing Data
 df_missing = pd.DataFrame({'A': [1, 2, None], 'B': [4, None, 6]})
 print("\nBefore Filling:\n", df_missing)
-df_filled = df_missing.fillna(df_missing.mean()) # Fill with column mean
+df_filled = df_missing.fillna(df_missing.mean()) # Fill with column mean or med for media
 print("\nAfter Filling:\n", df_filled)
 
 # TODO: Advanced String Operations
