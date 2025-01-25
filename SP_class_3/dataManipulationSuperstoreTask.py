@@ -1,8 +1,6 @@
 # Import necessary libraries
 import pandas as pd
 
-from Python_SP.SP_class_3.dataManipulation import df_missing
-
 # Import DateFrame using url
 url = "https://raw.githubusercontent.com/nileshely/SuperStore-Dataset-2019-2022/refs/heads/main/superstore_dataset.csv"
 df = pd.read_csv(url)
