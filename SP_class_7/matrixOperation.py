@@ -41,3 +41,11 @@ F = np.array([8, 13])
 # Solve for X
 X = np.linalg.solve(E, F)
 print("\nSolution to the linear system (x, y):", X)
+
+# Visualize a matrix using matplotlib
+import matplotlib.pyplot as plt
+
+plt.matshow(E, cmap="coolwarm")
+plt.title("Matrix Visualization")
+plt.colorbar()
+plt.show()
